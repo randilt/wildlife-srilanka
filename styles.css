@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #d2b48c;
+  background-color: #d7d6d5;
   height: 100vh;
 }
 .header {
@@ -174,7 +174,7 @@ body {
   left: 0;
   width: 100%;
   height: 50px;
-  background: linear-gradient(to bottom, transparent, #d2b48c);
+  background: linear-gradient(to bottom, transparent, #d7d6d5);
 }
 .hero-content {
   display: flex;
@@ -205,5 +205,118 @@ body {
     background-image: url("images/banner-mobile.jpg");
     height: 500px;
     background-size: cover;
+  }
+}
+.topic-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.national-parks {
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+
+  justify-content: center;
+}
+.wilpattu {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  background-image: url("images/wilpattu-main.jpg");
+  background-size: cover;
+}
+
+.yala {
+  height: 300px;
+  position: relative;
+  width: 45%;
+  background-color: red;
+  background-image: url("images/yala-main.jpeg");
+  background-size: cover;
+}
+.sl-leopard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.srilankan-leopard {
+  position: relative;
+  height: 400px;
+  width: 91.5%;
+  background-image: url("images/srilankan-leopard.jpg");
+  background-size: cover;
+}
+footer {
+  background: #006400;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  font-weight: 500;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading img {
+  max-width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.park-content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  padding-bottom: 30px;
+  color: white;
+  -webkit-text-stroke: 1px #006400;
+}
+.park-content h1 {
+  font-size: 50px;
+  padding-bottom: 18px;
+}
+.park-content a {
+  text-decoration: none;
+  background-color: #2f4f4f;
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.park-content a:hover {
+  background-color: #3cb371;
+  padding: 18px;
+}
+.srilankan-leopard .park-content {
+  position: absolute;
+  left: 30%;
+}
+.srilankan-leopard .park-content h1 {
+  font-size: 90px;
+}
+.srilankan-leopard .park-content a {
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  .park-content h1 {
+    font-size: 25px;
+  }
+  .srilankan-leopard .park-content h1 {
+    font-size: 35px;
+  }
+  .srilankan-leopard .park-content a {
+    font-size: 15px;
+  }
+  .heading img {
+    max-width: 200px;
   }
 }
