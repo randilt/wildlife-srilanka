@@ -183,22 +183,23 @@ body {
   color: white;
   font-size: 24px;
   margin-left: 40px;
-  -webkit-text-stroke: 1.5px #000;
+  -webkit-text-stroke: 1.5px #2f4f4f;
 }
 .hero-content h1 {
   font-size: 60px;
 }
 .hero-content p {
   font-size: 40px;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   .hero-content h1 {
     font-size: 40px;
   }
   .hero-content p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
-    -webkit-text-stroke: 0.8px #000;
+    -webkit-text-stroke: 0.8px #2f4f4f;
   }
   .hero-section {
     background-image: url("images/banner-mobile.jpg");
