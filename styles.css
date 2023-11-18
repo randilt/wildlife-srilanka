@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d2b48c;
+}
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #006400;
+  padding: 0 25px;
+}
+.logo a {
+  display: block;
+}
+.logo a img {
+  display: block;
+  width: 50%;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+.menu li {
+  list-style-type: none;
+  font-weight: 500;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 30px 25px;
+  font-size: 18px;
+  line-height: 1;
+  transition: 0.5s;
+}
+.menu li a:hover {
+  box-shadow: 0 -5px 0px #f8f7f7 inset,
+    500px 0 0 rgba(255, 255, 255, 0.08) inset;
+}
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #006400;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.hamburger:before {
+  top: -10px;
+  width: 20px;
+}
+.hamburger::after {
+  top: 10px;
+  width: 25px;
+}
+.toggle-menu {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+.hamburger,
+.toggle-menu {
+  display: none;
+}
+.navigation input:checked ~ .hamburger {
+  background: transparent;
+}
+.navigation input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+.navigation input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+.navigation input:checked ~ .menu {
+  right: 0;
+  box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .hamburger,
+  .toggle-menu {
+    display: block;
+  }
+  .menu {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: #006400;
+    width: 300px;
+    height: 100%;
+    padding-top: 67px;
+  }
+  .menu li {
+    width: 100%;
+    text-align: left;
+  }
+  .menu li a {
+    padding: 30px;
+    font-size: 20px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  }
+}
