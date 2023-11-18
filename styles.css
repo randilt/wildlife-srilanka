@@ -277,7 +277,6 @@ footer {
   left: 10px;
   padding-bottom: 30px;
   color: white;
-  -webkit-text-stroke: 1px #006400;
 }
 .park-content h1 {
   font-size: 50px;
@@ -318,5 +317,23 @@ footer {
   }
   .heading img {
     max-width: 200px;
+  }
+}
+.heading-description {
+  font-size: 15px;
+  padding: 16px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 992px) {
+  .heading {
+    flex-direction: column;
+  }
+  .heading-description {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heading-description {
+    font-size: 12px;
   }
 }
