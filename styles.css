@@ -390,7 +390,7 @@ footer {
   background: #3cb371;
 }
 .wildlife-section {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   padding: 30px;
 }
 
@@ -479,4 +479,27 @@ th {
 tfoot {
   background-color: #e0e0e0;
   font-style: italic;
+}
+.location-images {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.location-images img {
+  max-width: 500px;
+}
+@media screen and (max-width: 768px) {
+  .location-images img {
+    max-width: 300px;
+  }
+}
+.details {
+  display: flex;
+  justify-content: center;
+}
+td img {
+  max-width: 100px;
 }
