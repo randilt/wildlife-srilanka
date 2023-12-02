@@ -389,3 +389,31 @@ footer {
 .learn-more a:hover {
   background: #3cb371;
 }
+.wildlife-section {
+  margin-bottom: 60px;
+  padding: 30px;
+}
+
+.wildlife-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #006400;
+}
+
+.wildlife-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.highlights-list {
+  list-style-type: disc;
+  margin-left: 10px;
+}
+
+.highlights-list li {
+  margin-bottom: 10px;
+  color: #000000;
+}
