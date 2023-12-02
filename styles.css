@@ -417,3 +417,66 @@ footer {
   margin-bottom: 10px;
   color: #000000;
 }
+.about-wildlife-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 300px;
+  background-image: url(images/about-bg.webp);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-text {
+  margin: 20px;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+}
+.about-text h1 {
+  background: #028f027d;
+  border-radius: 10px;
+  padding: 5px;
+}
+.about-text {
+  padding-left: 5px;
+}
+@media screen and (max-width: 640px) {
+  .about-text h1 {
+    font-size: 25px;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #3a8000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #3a8000;
+  color: #fff;
+}
+
+tfoot {
+  background-color: #e0e0e0;
+  font-style: italic;
+}
