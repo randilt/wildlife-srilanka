@@ -48,7 +48,7 @@ body {
   text-decoration: none;
   display: block;
   padding: 30px 25px;
-  font-size: 18px;
+  font-size: 15 px;
   line-height: 1;
   transition: 0.5s;
 }
@@ -394,7 +394,7 @@ footer {
   padding: 30px;
 }
 
-.wildlife-section h2 {
+.heading-main {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -502,4 +502,42 @@ tfoot {
 }
 td img {
   max-width: 100px;
+}
+.main-intro {
+  padding: 30px;
+}
+.main-intro ul {
+  padding-left: 40px;
+}
+#gallery {
+  margin-bottom: 50px;
+  padding: 30px;
+}
+.gallery-flex {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.gallery-item img {
+  max-width: 250px;
+  max-height: 200px;
+  object-fit: cover;
+}
+.gallery-item {
+  margin: 0 30px;
+  max-width: 250px;
+}
+.gallery-item span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.main-intro iframe {
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 300px;
 }
