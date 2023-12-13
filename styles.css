@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #d7d6d5;
+  background-color: #ffffff;
   height: 100vh;
 }
 .header {
@@ -16,7 +16,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #006400;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
   padding: 0 25px;
 }
 .logo a {
@@ -41,20 +42,20 @@ body {
 }
 .menu li {
   list-style-type: none;
-  font-weight: 500;
+  font-weight: 200;
+  font-size: 14px;
 }
 .menu li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   display: block;
   padding: 30px 25px;
-  font-size: 15 px;
+
   line-height: 1;
   transition: 0.5s;
 }
 .menu li a:hover {
-  box-shadow: 0 -5px 0px #f8f7f7 inset,
-    500px 0 0 rgba(255, 255, 255, 0.08) inset;
+  box-shadow: 0 -5px 0px #080808 inset, 500px 0 0 rgba(14, 13, 13, 0.08) inset;
 }
 .dropdown {
   display: inline-block;
@@ -63,7 +64,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #006400;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -76,7 +77,7 @@ body {
   position: relative;
   width: 30px;
   height: 4px;
-  background: #fff;
+  background: #000000;
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
@@ -88,7 +89,7 @@ body {
   position: absolute;
   height: 4px;
   right: 0;
-  background: #fff;
+  background: #000000;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -145,7 +146,7 @@ body {
     position: fixed;
     top: 0;
     right: -300px;
-    background: #006400;
+    background: #ffffff;
     width: 300px;
     height: 100%;
     padding-top: 67px;
