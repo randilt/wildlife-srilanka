@@ -175,7 +175,7 @@ body {
   left: 0;
   width: 100%;
   height: 50px;
-  background: linear-gradient(to bottom, transparent, #d7d6d5);
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 .hero-content {
   display: flex;
@@ -252,15 +252,47 @@ body {
   background-image: url("images/srilankan-leopard.jpg");
   background-size: cover;
 }
-footer {
-  background: #006400;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 15px;
+  border-top: 4px solid #006400;
 }
-
+.footer-details {
+  max-width: 300px;
+}
+.footer-details li {
+  list-style: none;
+}
+.footer-details a {
+  text-decoration: none;
+  color: #000000;
+}
+.footer-details a:hover {
+  color: #3a8000;
+  text-decoration: underline;
+}
+.footer-details h2 {
+  color: #3a8000;
+  font-size: 25px;
+}
+.socials {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 15px;
+}
+.socials a img {
+  width: 30px;
+}
 .footer-content {
   font-weight: 500;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-top: 4px solid #006400;
+  text-align: center;
 }
 .heading {
   display: flex;
@@ -418,17 +450,20 @@ footer {
   margin-bottom: 10px;
   color: #000000;
 }
-.about-wildlife-main {
+.sub-hero {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 60px;
   width: 100%;
   height: 300px;
-  background-image: url(images/about-bg.webp);
+  background-image: url(images/wildlife-main.jpg);
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.department {
+  background-image: url(images/department.jpg);
 }
 .about-text {
   margin: 20px;
@@ -437,24 +472,21 @@ footer {
   padding: 15px;
 }
 .about-text h1 {
-  background: #028f027d;
+  background: #028f02a9;
+  text-align: center;
   border-radius: 10px;
   padding: 5px;
 }
-.about-text {
-  padding-left: 5px;
-}
+
 @media screen and (max-width: 640px) {
   .about-text h1 {
     font-size: 25px;
-  }
-  .about-text {
-    font-size: 15px;
   }
 }
 
 iframe {
   width: 100%;
+  border-radius: 20px;
   height: 500px;
   margin-bottom: 60px;
 }
@@ -491,10 +523,16 @@ tfoot {
 }
 .location-images img {
   max-width: 500px;
+  border-radius: 20px;
 }
 @media screen and (max-width: 768px) {
   .location-images img {
     max-width: 300px;
+  }
+  .footer-main {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
   }
 }
 .details {
@@ -510,31 +548,31 @@ td img {
 .main-intro ul {
   padding-left: 40px;
 }
-#gallery {
-  margin-bottom: 50px;
-  padding: 30px;
+.gallery-heading {
+  margin-left: 30px;
 }
-.gallery-flex {
-  display: flex;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-.gallery-item img {
-  max-width: 250px;
-  max-height: 200px;
-  object-fit: cover;
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 30px;
 }
 .gallery-item {
-  margin: 0 30px;
-  max-width: 250px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
 }
-.gallery-item span {
-  font-size: 15px;
-  font-weight: 600;
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item-span-2 {
+  grid-column: span 2;
 }
 .main-intro iframe {
   display: flex;
