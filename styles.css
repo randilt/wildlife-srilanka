@@ -288,8 +288,8 @@ body {
 }
 .footer-content {
   font-weight: 500;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
+  background: #006400;
+  color: rgb(255, 255, 255);
   padding: 20px;
   border-top: 4px solid #006400;
   text-align: center;
@@ -579,4 +579,82 @@ td img {
   margin: 0 auto;
   max-width: 600px;
   max-height: 300px;
+}
+.leopard-hero {
+  background-image: url(images/srilankan-leopard.jpg);
+}
+.leopard-habitat {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px;
+  margin-top: 40px;
+}
+.habitat-desc {
+  display: flex;
+  flex-direction: column;
+}
+.habitat-img img {
+  max-width: 600px;
+  border-radius: 20px;
+}
+.habitat-img {
+  float: right;
+}
+.leopard-button {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background: #006400;
+  width: fit-content;
+  border-radius: 10px;
+  transition: ease 0.3s;
+}
+.leopard-button:hover {
+  background: #3cb371;
+}
+
+@media screen and (max-width: 1280px) {
+  .leopard-habitat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-item {
+    flex-direction: column-reverse;
+  }
+  .habitat-img {
+    float: none;
+  }
+
+  .habitat-desc h3 {
+    font-size: 24px;
+  }
+  .wildlife-section {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .leopard-habitat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-item {
+    flex-direction: column-reverse;
+  }
+  .habitat-img {
+    float: none;
+  }
+  .habitat-img img {
+    max-width: 300px;
+  }
+  .habitat-desc h3 {
+    font-size: 24px;
+  }
+  .wildlife-section {
+    padding: 10px;
+  }
 }
