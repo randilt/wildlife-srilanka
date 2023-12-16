@@ -61,6 +61,9 @@ body {
 .menu li a:hover {
   box-shadow: 0 -5px 0px #ffffff inset, 500px 0 0 rgba(14, 13, 13, 0.08) inset;
 }
+.active {
+  box-shadow: 0 -5px 0px #ffffff inset, 500px 0 0 rgba(14, 13, 13, 0.08) inset;
+}
 .dropdown {
   display: inline-block;
 }
