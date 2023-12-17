@@ -1,0 +1,122 @@
+.yala {
+  background-image: url("images/yala-main.jpg");
+  background-size: cover;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px;
+}
+.container h1 {
+  font-size: 50px;
+  color: green;
+  text-align: center;
+}
+.container img {
+  max-width: 50%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.intro {
+  display: flex;
+  gap: 30px;
+}
+.read-more {
+  padding: 10px;
+  color: rgb(4, 4, 4);
+  background-color: rgb(105, 253, 105);
+  border-radius: 12px;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container img {
+    max-width: 100%;
+  }
+  .intro {
+    flex-direction: column;
+  }
+}
+li {
+  list-style: none;
+}
+#visit {
+  margin-top: 30px;
+}
+#visit p {
+  line-height: 1.6;
+}
+strong {
+  font-size: 18px;
+}
+#visit h2 {
+  text-decoration: underline;
+  color: green;
+}
+#things-to-see {
+  margin-top: 30px;
+}
+#things-to-see h2 {
+  text-decoration: underline;
+  color: green;
+}
+.parks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+.item {
+  border-radius: 20px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  cursor: pointer;
+}
+.item-1 {
+  grid-column: 1/3;
+  background-image: url("images/elephant-gathering.jpg");
+  background-size: cover;
+}
+.item-2 {
+  background-image: url("images/leopard-kote.jpg");
+}
+.item-3 {
+  background-image: url("images/magul-wiharaya.webp");
+}
+.item-4 {
+  grid-column: 2/4;
+  background-image: url("images/yala-bird.jpg");
+  background-repeat: no-repeat;
+}
+
+.item h3 {
+  font-size: 50px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .item {
+    height: 200px;
+  }
+  .item h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .parks-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
