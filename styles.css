@@ -290,14 +290,13 @@ body {
 }
 .footer-details a {
   text-decoration: none;
-  color: #cfcccc;
+  color: #ffffff;
 }
 .footer-details a:hover {
-  color: #e2e2e2;
   text-decoration: underline;
 }
 .footer-details h2 {
-  color: #3a8000;
+  color: #ffffff;
   font-size: 25px;
 }
 .socials {
