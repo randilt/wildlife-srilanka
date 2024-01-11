@@ -13,7 +13,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "splash_screen": {
-    "full": "splash-screen.png",
+    "full": "banner-1.webp",
     "300x200": "splash-screen.png"
   }
 }
