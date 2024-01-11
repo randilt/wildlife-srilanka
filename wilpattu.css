@@ -26,3 +26,16 @@
   background-color: rgb(0, 255, 0);
   color: black;
 }
+#visit {
+  padding: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: green;
+  border-radius: 12px;
+  transition: ease-in-out 0.3s;
+}
+#visit:hover {
+  background-color: rgb(11, 197, 11);
+  color: black;
+}
