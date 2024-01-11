@@ -11,5 +11,9 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "splash_screen": {
+    "full": "splash-screen.png",
+    "300x200": "splash-screen.png"
+  }
 }
