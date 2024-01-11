@@ -9,6 +9,7 @@
 body {
   background: radial-gradient(circle at center, #b3b0b0, #ffffff);
   height: 100vh;
+  color: #424242;
 }
 
 .header {
@@ -203,6 +204,18 @@ body {
   font-size: 24px;
   margin-left: 40px;
   -webkit-text-stroke: 1.5px #2f4f4f;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .hero-content h1 {
   font-size: 60px;
@@ -464,7 +477,7 @@ body {
 .wildlife-section p {
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
+  color: #424242;
   margin-bottom: 20px;
 }
 
@@ -475,7 +488,7 @@ body {
 
 .highlights-list li {
   margin-bottom: 10px;
-  color: #000000;
+  color: #424242;
 }
 .sub-hero {
   display: flex;
@@ -497,6 +510,7 @@ body {
   color: white;
   font-size: 30px;
   padding: 15px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 .about-text h1 {
   background: #028f02a9;
