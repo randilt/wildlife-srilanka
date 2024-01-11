@@ -181,7 +181,7 @@ body {
 }
 .hero-section {
   position: relative;
-  background-image: url("images/banner-1.jpg");
+  background-image: url("images/banner-1.webp");
   background-size: cover;
   height: 600px;
   display: flex;
@@ -221,7 +221,7 @@ body {
     -webkit-text-stroke: 0.8px #2f4f4f;
   }
   .hero-section {
-    background-image: url("images/banner-mobile.jpg");
+    background-image: url("images/banner-mobile.webp");
     height: 500px;
     background-size: cover;
   }
@@ -485,13 +485,13 @@ body {
   margin-bottom: 60px;
   width: 100%;
   height: 400px;
-  background-image: url(images/wildlife-main.jpg);
+  background-image: url(images/wildlife-main.webp);
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .department {
-  background-image: url(images/department.jpg);
+  background-image: url(images/department.webp);
 }
 .about-text {
   margin: 20px;
@@ -683,7 +683,7 @@ td img {
   max-height: 300px;
 }
 .leopard-hero {
-  background-image: url(images/srilankan-leopard.jpg);
+  background-image: url(images/banner-1.webp);
 }
 .leopard-habitat {
   display: flex;
@@ -761,7 +761,7 @@ td img {
   }
 }
 .animals-hero {
-  background-image: url(images/wildlife-tours.jpg);
+  background-image: url(images/wildlife-tours.webp);
 }
 .explore-parks {
   display: flex;
