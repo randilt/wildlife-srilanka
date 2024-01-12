@@ -10,16 +10,19 @@ body {
 #main-intro img {
   max-width: 50%;
   border-radius: 20px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
 }
 
 .container h1 {
   color: green;
+  text-decoration: underline;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
 .container {
   margin: 30px;
+  text-align: center;
 }
 
 .intro {
@@ -48,4 +51,91 @@ body {
   color: white;
   background: linear-gradient(45deg, green, rgb(0, 255, 0));
   border-radius: 12px;
+}
+.parks-grid {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+}
+.item {
+  border-radius: 20px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.5);
+}
+.item-1 {
+  background-image: url("images/banner-1.webp");
+  background-size: cover;
+}
+.item h3 {
+  padding: 20px;
+  background-color: green;
+  border-radius: 12px;
+  opacity: 0.6;
+}
+.item-2 {
+  background-image: url("images/birds-1.webp");
+  background-size: cover;
+}
+.item-3 {
+  background-image: url("images/lake1.webp");
+}
+.item-4 {
+  background-image: url("images/flora-and-fauna.webp");
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .parks-grid {
+    flex-direction: column;
+  }
+  .item {
+    margin-bottom: 30px;
+    height: 200px;
+    font-size: 16px;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  #main-intro img {
+    max-width: 100%;
+  }
+}
+#things-to-see .heading-parks {
+  color: green;
+  text-decoration: underline;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.item:hover {
+  animation: rotate 1s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#visit:hover {
+  animation: pulse 1s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
 }

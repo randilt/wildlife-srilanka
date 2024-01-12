@@ -565,6 +565,10 @@ tfoot {
 .location-images img {
   max-width: 500px;
   border-radius: 20px;
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 0.5);
+}
+iframe {
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
   .location-images img {
@@ -712,6 +716,7 @@ td img {
 .habitat-img img {
   max-width: 600px;
   border-radius: 20px;
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 0.5);
 }
 .habitat-img {
   float: right;
