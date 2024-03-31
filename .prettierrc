@@ -1,0 +1,13 @@
+{
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json",
+        "singleQuote": true,
+        "trailingComma": "none",
+        "semi": false
+      }
+    }
+  ]
+}
