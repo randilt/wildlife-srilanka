@@ -1,3 +1,9 @@
+/*
+============================================
+CODE FOR HOME PAGE START HERE
+============================================
+*/
+
 // Fetch JSON data
 fetch("data/home.json")
   .then((response) => response.json())
@@ -10,8 +16,6 @@ fetch("data/home.json")
   });
 
 const data = JSON.parse(localStorage.getItem("homeData"));
-
-console.log(data);
 
 //rendering the text data
 document.getElementById("headingP1").innerHTML = data.homeTexts[0].headingP1;
