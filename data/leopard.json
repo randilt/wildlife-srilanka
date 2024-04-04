@@ -1,0 +1,37 @@
+{
+  "leopardInfo": {
+    "title": "Venues where Sri Lankan Leopards are Found",
+    "habitat": [
+      {
+        "name": "Gal-Oya National Park",
+        "description": "Gal Oya National Park, located in the southeastern part of Sri Lanka, is a lesser-known yet vital habitat for Sri Lankan leopards. The park's diverse landscapes, encompassing evergreen forests and savannas, contribute to its significance as a sanctuary for these majestic creatures. While leopards in Gal Oya may be more elusive compared to other parks, fortunate visitors may encounter them, especially during dawn and dusk. The park's varied ecosystems provide an ideal setting for leopards, making it a unique destination for wildlife enthusiasts seeking a glimpse of these elusive big cats.",
+        "image": "images/gal-oya-leopard.webp"
+      },
+      {
+        "name": "Kumana National Park",
+        "description": "Kumana National Park, situated in the southeastern region of Sri Lanka, is a diverse habitat for Sri Lankan leopards. The park's unique blend of wetlands, lagoons, and dense forests makes it an essential sanctuary for these elusive big cats. While Kumana is renowned for its rich birdlife, it also provides a home for leopards, adding to the park's ecological significance. The varying landscapes create an environment where leopards can thrive, and visitors may be fortunate to spot them during early morning or late afternoon excursions. Exploring Kumana offers not only a chance to witness a variety of wildlife but also the opportunity to observe leopards adapting to the park's distinctive ecosystems.",
+        "image": "images/kumana-leopard.webp"
+      },
+      {
+        "name": "Horton Plains National Park",
+        "description": "Horton Plains National Park, nestled in the central highlands of Sri Lanka, stands out for its extraordinary highland ecosystem and serves as a unique habitat for Sri Lankan leopards. This park offers a distinctive perspective on leopard conservation as it unfolds amidst the vast grasslands and cloud forests. Leopards have adapted seamlessly to the diverse environments within Horton Plains, showcasing their remarkable ability to thrive in highland terrain. While leopards here may be more elusive compared to other locations, patient observers may be rewarded with sightings, particularly during the quieter hours of the day. Exploring Horton Plains not only provides a glimpse into the fascinating highland ecosystem but also offers the chance to witness the resilience and adaptability of Sri Lankan leopards in this captivating environment.",
+        "image": "images/horton-plains-leopard.jpg"
+      }
+    ]
+  },
+  "leopardFacts": {
+    "title": "Threats to Sri Lankan Leopards",
+    "threats": [
+      {
+        "name": "Habitat Loss and Fragmentation",
+        "description": "Delve into the consequences of habitat loss, exploring the ramifications such as diminished prey availability and heightened human-leopard conflicts, shedding light on the urgency of conservation efforts. Implementing a comprehensive conservation strategy that includes habitat restoration through reforestation initiatives, the creation of wildlife corridors for habitat connectivity, active community engagement for sustainable land use practices, expansion of protected areas, and ongoing research and monitoring programs. These efforts collectively underline the importance of sustained conservation for the preservation and reconnection of leopard habitats.",
+        "image": "images/Deforestation.webp"
+      },
+      {
+        "name": "Poaching and Illegal Wildlife Trade",
+        "description": "Examine the detrimental effects of poaching on leopard populations and the ecosystem at large, elucidating the urgent need for comprehensive anti-poaching measures. Combatting poaching and illegal wildlife trade demands a holistic strategy. Vigilant anti-poaching patrols, robust enforcement, and engaging local communities through awareness are key. Strengthening legislation and collaborative efforts ensure effective prosecution. Undercover operations dismantle illegal trade networks, aided by technology like camera traps. This comprehensive approach emphasizes sustained conservation to protect and preserve Sri Lankan leopards.",
+        "image": "images/illegal-trade.jpg"
+      }
+    ]
+  }
+}

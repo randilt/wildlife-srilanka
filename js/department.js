@@ -1,6 +1,6 @@
 /*
 ============================================
-CODE FOR HOME PAGE START HERE
+CODE FOR DEPARTMENT PAGE START HERE
 ============================================
 */
 
