@@ -1,13 +1,15 @@
 const currentPage = window.location.pathname.split("/").pop();
 console.log(currentPage);
-const isAuthenticated = true;
+const isAuthenticated = false;
+
+if (!isAuthenticated) {
+  const loginBtn = `<li><a href="login.html">Login</a></li>`;
+  document.querySelector(".menu").insertAdjacentHTML("beforeend", loginBtn);
+}
 
 if (isAuthenticated) {
-  const editButton = document.createElement("button");
-  editButton.id = "openEditor";
-  editButton.textContent = "Edit the page";
-
-  document.querySelector(".navigation").appendChild(editButton);
+  const editButton = `<li><a id="openEditor">Edit Content</a></li>`;
+  document.querySelector(".menu").insertAdjacentHTML("beforeend", editButton);
 }
 
 // Add event listener for the dynamically created button
