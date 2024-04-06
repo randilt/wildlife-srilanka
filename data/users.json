@@ -1,0 +1,20 @@
+[
+  {
+    "username": "johnDoe",
+    "password": "securePass1",
+    "role": "admin",
+    "email": "john.doe@example.com"
+  },
+  {
+    "username": "janeSmith",
+    "password": "pass1234",
+    "role": "editor",
+    "email": "jane.smith@example.com"
+  },
+  {
+    "username": "aliceWonder",
+    "password": "wonderPass",
+    "role": "user",
+    "email": "alice.wonder@example.com"
+  }
+]
