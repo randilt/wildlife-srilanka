@@ -54,3 +54,8 @@ function renderInputs(data, parentElement) {
 
 const container = document.getElementById("container");
 renderInputs(jsonData, container);
+
+document.getElementById("update").addEventListener("click", () => {
+  localStorage.setItem(localStorageKey, JSON.stringify(jsonData));
+  alert("Data updated successfully!");
+});

@@ -9,7 +9,9 @@ fetch("data/leopard.json")
   .then((response) => response.json())
   .then((data) => {
     // Store JSON data in localStorage
-    localStorage.setItem("leopardData", JSON.stringify(data));
+    if (!localStorage.getItem("leopardData")) {
+      localStorage.setItem("leopardData", JSON.stringify(data));
+    }
   })
   .catch((error) => {
     console.error("Error fetching data:", error);

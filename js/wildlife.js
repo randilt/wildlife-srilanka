@@ -9,7 +9,9 @@ fetch("data/wildlife.json")
   .then((response) => response.json())
   .then((data) => {
     // Store JSON data in localStorage
-    localStorage.setItem("wildlifeData", JSON.stringify(data));
+    if (!localStorage.getItem("wildlifeData")) {
+      localStorage.setItem("wildlifeData", JSON.stringify(data));
+    }
   })
   .catch((error) => {
     console.error("Error fetching data:", error);

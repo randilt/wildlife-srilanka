@@ -9,7 +9,9 @@ fetch("data/home.json")
   .then((response) => response.json())
   .then((data) => {
     // Store JSON data in localStorage
-    localStorage.setItem("homeData", JSON.stringify(data));
+    if (!localStorage.getItem("homeData")) {
+      localStorage.setItem("homeData", JSON.stringify(data));
+    }
   })
   .catch((error) => {
     console.error("Error fetching data:", error);
@@ -57,15 +59,3 @@ document.getElementById("highlightsList").innerHTML =
     .join("");
 document.getElementById("wildlifeDescription").innerHTML =
   data.wildlifeSection.description;
-function openEditorPopup() {
-  const localStorageKey = "wilpattuData"; // or dynamically get this value
-  window.open(
-    `editor.html?key=${localStorageKey}`, // dynamically set the key
-    "Editor",
-    "width=600,height=400"
-  );
-}
-
-document
-  .getElementById("openEditor")
-  .addEventListener("click", openEditorPopup);

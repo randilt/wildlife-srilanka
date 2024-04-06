@@ -9,7 +9,9 @@ fetch("data/yala.json")
   .then((response) => response.json())
   .then((data) => {
     // Store JSON data in localStorage
-    localStorage.setItem("yalaData", JSON.stringify(data));
+    if (!localStorage.getItem("yalaData")) {
+      localStorage.setItem("yalaData", JSON.stringify(data));
+    }
   })
   .catch((error) => {
     console.error("Error fetching data:", error);

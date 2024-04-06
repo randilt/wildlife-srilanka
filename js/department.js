@@ -9,7 +9,9 @@ fetch("data/department.json")
   .then((response) => response.json())
   .then((data) => {
     // Store JSON data in localStorage
-    localStorage.setItem("departmentData", JSON.stringify(data));
+    if (!localStorage.getItem("departmentData")) {
+      localStorage.setItem("departmentData", JSON.stringify(data));
+    }
   })
   .catch((error) => {
     console.error("Error fetching data:", error);
