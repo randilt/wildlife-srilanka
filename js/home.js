@@ -57,3 +57,15 @@ document.getElementById("highlightsList").innerHTML =
     .join("");
 document.getElementById("wildlifeDescription").innerHTML =
   data.wildlifeSection.description;
+function openEditorPopup() {
+  const localStorageKey = "wilpattuData"; // or dynamically get this value
+  window.open(
+    `editor.html?key=${localStorageKey}`, // dynamically set the key
+    "Editor",
+    "width=600,height=400"
+  );
+}
+
+document
+  .getElementById("openEditor")
+  .addEventListener("click", openEditorPopup);

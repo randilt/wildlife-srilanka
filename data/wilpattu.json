@@ -1,0 +1,17 @@
+{
+  "wilpattuNationalPark": {
+    "title": "Wilpattu National Park",
+    "intro": {
+      "image": "images/wilpattu-main.jpg",
+      "description": "Explore the wild wonders of Wilpattu National Park, a pristine sanctuary nestled in the heart of Sri Lanka. This expansive park is renowned for its diverse ecosystems, featuring dense forests, sparkling lakes, and vast grasslands that provide a haven for a rich variety of wildlife. <br /><br /> Wilpattu is not only home to the majestic Sri Lankan Leopard but also hosts a myriad of other species, offering a unique safari experience. Join us on a journey to uncover the untamed beauty of Wilpattu, where each moment unveils the raw essence of Sri Lanka's natural heritage. <br /><br /> <a class=\"read-more\" href=\"https://www.wilpattu.lk/\">Read More</a>",
+      "link": "https://www.wilpattu.lk/"
+    },
+    "visitorTips": {
+      "description": "Embarking on a safari adventure in Wilpattu National Park is an immersive experience that demands preparation and a keen sense of exploration. Here, we provide valuable tips to ensure you make the most of your visit and create lasting memories in this pristine wilderness.",
+      "tips": [
+        "<li><strong>- Ideal Times for Safari:</strong> Plan your visit during the dry season from February to July for optimal wildlife sightings. The scarcity of water during this period concentrates animals around existing water sources, increasing your chances of spotting them.</li>",
+        "<li><strong>- Morning vs. Afternoon Safaris:</strong> Consider participating in both morning and afternoon safaris. The early hours often present excellent opportunities to witness predators in action, while the afternoon allows you to observe animals as they prepare for the night.</li>"
+      ]
+    }
+  }
+}
